@@ -4,7 +4,7 @@ Implementation of DeepSpeech2 for PyTorch. Creates a network based on the [DeepS
 
 ## Installation
 
-### Docker
+### Docker (NO NEED)
 
 There is no official Dockerhub image, however a Dockerfile is provided to build on your own systems.
 
@@ -20,10 +20,10 @@ sudo nvidia-docker run -ti -v `pwd`/data:/workspace/data --entrypoint=/bin/bash 
 
 ```
 
-### From Source
+### From Source ( Start from here) Pytorch 1.2, Python 3.5.2
 
 Several libraries are needed to be installed for training to work. I will assume that everything is being installed in
-an Anaconda installation on Ubuntu, with Pytorch 1.0.
+an Anaconda installation on Ubuntu, with Pytorch 1.2.
 
 Install [PyTorch](https://github.com/pytorch/pytorch#installation) if you haven't already.
 
