@@ -52,6 +52,18 @@ Finally clone this repo and run this within the repo:
 pip install -r requirements.txt
 ```
 
+Create folder models and wget wget https://github.com/SeanNaren/deepspeech.pytorch/releases/download/v2.0/librispeech_pretrained_v2.pth
+
+to run server
+```
+python server.py --host 0.0.0.0 --port 8000
+```
+OUT:
+```
+curl -X POST http://0.0.0.0:8000/transcribe -H "Content-type: multipart/form-data" -F "file=@arabic9.wav"
+
+{"status": "OK", "transcription": [["HARHASF NOTORN ANSEEER COR PON MALS HANSH WERHEM ALL ONDLI CFHASCHMN'S UL SFASH FONM PALS SOL SAP PISHMELPBBGOUS BMS HAN MA WHY ISH MORE THE SMAHAIR OF PEVAR ALE WY LOUVSHIMMMTHE ASOM PESA AS MIM HAND AN THAT HE WWEH SALL THE SIRN AHA HAH AGE PIHANS TANS AN CS N A HALAGH ERIS AN AA LOV TLU MA LERE LUNCH SAR AT EST LAUNGS SFAK"]]}
+```
 ## Training
 
 ### Datasets
